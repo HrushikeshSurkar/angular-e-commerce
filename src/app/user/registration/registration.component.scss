@@ -1,0 +1,108 @@
+@import '../../app.component.scss';
+
+.registration-form {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 10% auto;
+    padding: 20px 35px 15px 15px;
+    max-width: 500px;
+    background-color: var(--background-color); // Add background color
+    color: var(--text-color); // Add text color
+
+    h2 {
+        text-align: center;
+        font-size: $font-size-heading;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        label {
+            margin: 10px 0 0 0;
+            display: block;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            max-width: 320px;
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid $border-color;
+            border-radius: 5px;
+
+            &:focus {
+                border-color: $primary-color; // Change border color on focus
+                outline: none; // Remove default outline
+            }
+        }
+
+        button {
+            width: 100%; // Adjusted width for button to maintain consistency
+            max-width: 320px;
+            padding: 10px;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($primary-color, 5%); // Slightly darker on hover
+                opacity: 0.9;
+            }
+        }
+    }
+
+    .login-link {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline; // Underline on hover for better UX
+            }
+        }
+    }
+
+    // Tablet View
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        margin: 5% auto;
+        padding: 15px;
+        max-width: 60%;
+
+        form {
+            input {
+                max-width: 430px;
+            }
+
+            button {
+                max-width: 450px;
+            }
+        }
+    }
+
+    // Laptop View
+    @media only screen and (min-width: 1024px) {
+        margin: 5% auto;
+        padding: 15px;
+        max-width: 30%;
+
+        form {
+            input {
+                max-width: 430px;
+            }
+
+            button {
+                max-width: 450px;
+            }
+        }
+    }
+}
