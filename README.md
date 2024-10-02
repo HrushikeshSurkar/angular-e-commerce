@@ -50,6 +50,19 @@ e-commerce-project/
 ├── src/
 │   ├── app/
 │   │   ├── shared/
+│   │   │   ├── components/
+│   │   │   │   ├── nav-bar/
+│   │   │   │   │   ├── nav-bar.component.ts
+│   │   │   │   │   ├── nav-bar.component.html
+│   │   │   │   │   └── nav-bar.component.scss
+│   │   │   │   ├── footer/
+│   │   │   │   │   ├── footer.component.ts
+│   │   │   │   │   ├── footer.component.html
+│   │   │   │   │   └── footer.component.scss
+│   │   │   └── layout/
+│   │   │       ├── layout.component.ts
+│   │   │       ├── layout.component.html
+│   │   │       └── layout.component.scss
 │   │   ├── pages
 │   │   │   ├── home
 │   │   │   │   ├── home.component.ts
