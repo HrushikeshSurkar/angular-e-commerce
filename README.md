@@ -50,6 +50,18 @@ e-commerce-project/
 ├── src/
 │   ├── app/
 │   │   ├── shared/
+│   │   ├── pages
+│   │   │   ├── home
+│   │   │   │   ├── home.component.ts
+│   │   │   │   ├── home.component.html
+│   │   │   │   ├── home.component.scss
+│   │   │   │   └── home.module.ts
+│   │   │   ├── about/
+│   │   │   │   ├── about.component.ts
+│   │   │   │   ├── about.component.html
+│   │   │   │   ├── about.component.scss
+│   │   │   │   └── about.module.ts
+│   │   │
 │   │   ├── core/
 │   │   ├── product/
 │   │   ├── cart/
